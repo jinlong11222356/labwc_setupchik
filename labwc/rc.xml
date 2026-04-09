@@ -273,18 +273,9 @@ Keybind actions are specified in labwc-actions(5)
       <action name="Execute" command="firefox" />
     </keybind>
     <keybind key="W-2">
-      <action name="Execute" command="~/opt/Telegram/telegram" />
+      <action name="Execute" command="telegram" />
     </keybind>
-    <keybind key="W-3">
-      <action name="Execute" command="~/opt/Telegram/telegram" />
-    </keybind>
-    <keybind key="W-4">
-      <action name="Execute" command="firefox" />
-    </keybind>
-    <keybind key="W-5">
-      <action name="Execute" command="firefox" />
-    </keybind>
-   
+  
     <keybind key="C-1">
         <action name="GoToDesktop" to="1" wrap="yes" />
     </keybind>
