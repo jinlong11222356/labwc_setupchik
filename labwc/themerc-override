@@ -1,0 +1,11 @@
+# Window titlebar
+window.active.title.bg.color: #222222
+window.inactive.title.bg.color: #333333
+window.active.label.text.color: #eeeeee
+window.inactive.label.text.color: #999999
+
+# Menu
+menu.items.bg.color: #222222
+menu.items.text.color: #eeeeee
+menu.items.active.bg.color: #444444
+menu.items.active.text.color: #ffffff
