@@ -6,8 +6,7 @@ set font                  "JetBrains Mono 12"
                                                                             
 # --- Eye Care: Recolor Settings ---                                      
 set recolor               "true"                                          
-set recolor-keephue       "false" # Set to true if you want to keep image 
-colors                                                                      
+set recolor-keephue       "true" # Set to true if you want to keep image colors   
                                                                             
 # Soft Cream on Dark Charcoal (Gruvbox style)                             
 set recolor-lightcolor    "#282828" # Background                          
@@ -30,3 +29,8 @@ set notification-error-bg "#fb4934"
 set notification-error-fg "#282828"                                       
 set notification-warning-bg "#fabd2f"                                     
 set notification-warning-fg "#282828"
+
+set guioptions          ""        # Hides all bars/scrollbars             
+set selection-clipboard clipboard                                         
+set render-loading      "true" 
+
