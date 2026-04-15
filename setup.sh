@@ -7,3 +7,5 @@ tie(){
 
 tie labwc
 tie foot
+tie fastfetch
+tie zathura
