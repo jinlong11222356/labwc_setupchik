@@ -1,0 +1,8 @@
+alias update='~/Config/setup.sh'
+alias ff='while true; do echo -en "\033[H"; fastfetch; sleep 1; done'
+alias ai="AI_CONFIG=~/.config/ai/ai.json ai_request"
+alias forget="echo '' > ~/.config/ai/context.json"
+alias why='ai why'
+alias w=btop
+alias wh='zathura ~/Documents/eisenhorn.pdf & disown'
+alias translate='ollama run aya:8b "Translate the following English text to Ukrainian, provide only the translation:"' 
