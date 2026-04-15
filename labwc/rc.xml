@@ -185,7 +185,7 @@
 
     Or it can also be configured like this:
  -->   
-    <desktops number="4" />
+    <desktops number="5" />
 <!--
     Or like this:
     <desktops>
@@ -265,28 +265,24 @@ Keybind actions are specified in labwc-actions(5)
     
     <!-- apps: -->
     
-    <keybind key="W-f">
+    <keybind key="W-Space">
         <action name="Execute" command="wofi --show drun" />
     </keybind>
 
     <keybind key="W-1">
-      <action name="Execute" command="firefox" />
-    </keybind>
-    <keybind key="W-2">
-      <action name="Execute" command="telegram" />
-    </keybind>
-  
-    <keybind key="C-1">
         <action name="GoToDesktop" to="1" wrap="yes" />
     </keybind>
-    <keybind key="C-2">
+    <keybind key="W-2">
         <action name="GoToDesktop" to="2" wrap="yes" />
     </keybind>
-    <keybind key="C-3">
+    <keybind key="W-3">
         <action name="GoToDesktop" to="3" wrap="yes" />
     </keybind>
-    <keybind key="C-4">
+    <keybind key="W-4">
         <action name="GoToDesktop" to="4" wrap="yes" />
+    </keybind>
+    <keybind key="W-5">
+        <action name="GoToDesktop" to="5" wrap="yes" />
     </keybind>
 
     <keybind key="A-Tab">
@@ -298,7 +294,7 @@ Keybind actions are specified in labwc-actions(5)
     <keybind key="W-Return">
       <action name="Execute" command="foot" />
     </keybind>
-    <keybind key="W-q">
+    <keybind key="W-BackSpace">
       <action name="Close" />
     </keybind>
     <keybind key="W-a">
@@ -664,14 +660,13 @@ Keybind actions are specified in labwc-actions(5)
     #   - Matching is case-insensitive and is performed using shell wildcard
     #     patterns (see glob(7)) so '\*' (not between brackets) matches any
     #     string and '?' matches any single character.
-
+-->
     <windowRules>
-      <windowRule identifier="*"><action name="Maximize"/></windowRule>
-      <windowRule identifier="foo" serverDecoration="yes"/>
-      <windowRule title="bar" serverDecoration="yes"/>
-      <windowRule identifier="baz" title="quax" serverDecoration="yes"/>
+      <windowRule identifier="*" serverDecoration="no"/>
     </windowRules>
 
+
+<!--
     # Example below for `lxqt-panel` and `pcmanfm-qt \-\-desktop`
     # where 'matchOnce' is used to avoid applying rule to the panel
     # configuration window with the same 'app_id'.

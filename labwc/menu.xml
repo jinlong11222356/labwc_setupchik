@@ -1,0 +1,5 @@
+<menu id="root-menu" label="menu">
+    <item label="Terminal">
+        <action name="Execute" command="foot"/>
+    </item>
+</menu>
