@@ -263,11 +263,13 @@ Keybind actions are specified in labwc-actions(5)
     <repeatRate>25</repeatRate>
     <repeatDelay>600</repeatDelay>
       
+    <keybind key="W-b">
+      <action name="Execute" command='the-book' />
+    </keybind>
+    
     <keybind key="Print">
       <action name="Execute" command='sh -c "grim -g \"$(slurp)\" - | wl-copy"' />
     </keybind>
-
-    <!-- apps: -->
     
     <keybind key="W-Space">
         <action name="Execute" command="wofi --show drun" />
@@ -304,16 +306,19 @@ Keybind actions are specified in labwc-actions(5)
     <keybind key="W-a">
       <action name="ToggleMaximize" />
     </keybind>
-    <keybind key="W-Left">
+    <keybind key="W-h">
       <action name="SnapToEdge" direction="left" combine="yes" />
     </keybind>
-    <keybind key="W-Right">
+    <keybind key="W-l">
       <action name="SnapToEdge" direction="right" combine="yes" />
     </keybind>
-    <keybind key="W-Up">
+    <keybind key="W-k">
+      <action name="SnapToEdge" direction="up" combine="yes" />
+    </keybind>
+    <keybind key="W-m">
       <action name="ToggleMaximize" />
     </keybind>
-    <keybind key="W-Down">
+    <keybind key="W-j">
       <action name="SnapToEdge" direction="down" combine="yes" />
     </keybind>
     <keybind key="A-Space">
@@ -668,6 +673,9 @@ Keybind actions are specified in labwc-actions(5)
     <windowRules>
       <windowRule identifier="*" serverDecoration="no"/>
       <windowRule identifier="foot" serverDecoration="yes" />  
+      <windowRule identifier="org.pwmt.zathura" serverDecoration="no">
+        <action name="Maximize" />
+      </windowRule> 
     </windowRules>
 
 
